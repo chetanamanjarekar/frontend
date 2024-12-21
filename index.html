@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Search Platform</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+ 
+</head>
+
+<body>
+<!-- Header -->
+<header>
+  <div class="logo">𝔍𝔬𝔟𝔯𝔦𝔫𝔤𝔢𝔯</div>
+  <nav>
+    <ul>
+      <li><a href="find-job.html">Jobs</a></li>
+      <li><a href="companies.html">Companies</a></li>
+      <li><a href="jobs-blogs.html">Jobs Blogs</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+  </nav>
+  <div class="login-buttons">
+    <a href="login.html" class="btn">Jobseeker Login</a>
+    <a href="employeer-login.html" class="btn">Employer Login</a>
+  </div>
+</header>
+
+    <!-- <div class="profile">
+      <img src="assets/jobringer_logo.jpeg" alt="Profile">
+    </div>
+    <a href="https://wa.me/1234567890?text=Hello!%20I%20need%20assistance." target="_blank" class="whatsapp-chat"
+      title="Chat with us on WhatsApp">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Chat">
+    </a> -->
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Search Section -->
+    <section class="search-bar">
+      <!-- Job Title -->
+      <div class="job-title">
+        <label for="job-title">Job Title:</label>
+        <input type="text" id="job-title" placeholder="Enter job title or keyword">
+      </div>
+
+      <!-- Location -->
+      <div class="location">
+        <label for="location">Location:</label>
+        <select id="location">
+          <option value="All">All Maharashtra</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Pune">Pune</option>
+          <option value="Nagpur">Nagpur</option>
+          <option value="Nashik">Nashik</option>
+          <option value="Aurangabad">Aurangabad</option>
+          <option value="Solapur">Solapur</option>
+          <option value="Kolhapur">Kolhapur</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <!-- Salary Range -->
+      <div class="salary-range">
+        <label for="salary-options">Salary Range:</label>
+        <select id="salary-options">
+          <option value="0-3">₹0-3 LPA</option>
+          <option value="2.25-4">₹2.25-4 LPA</option>
+          <option value="4-8">₹4-8 LPA</option>
+          <option value="8-12">₹8-12 LPA</option>
+          <option value="12-25">₹12-25 LPA</option>
+          <option value="25-50">₹25-50 LPA</option>
+          <option value="50-100">₹50 LPA-1 Crore</option>
+          <option value="1+ Crore">₹1+ Crore</option>
+        </select>
+      </div>
+
+      <!-- Experience -->
+      <div class="experience">
+        <label for="experience-options">Experience:</label>
+        <select id="experience-options">
+          <option value="Fresher">Fresher</option>
+          <option value="1 year">1 Year</option>
+          <option value="2 years">2 Years</option>
+          <option value="3 years">3 Years</option>
+          <option value="4+ years">4+ Years</option>
+        </select>
+      </div>
+
+      <!-- Search Button -->
+      <button class="search-btn">Search</button>
+    </section>
+
+
+    <!-- Content -->
+    <section class="content">
+      <!-- Left Filters -->
+      <aside class="filters">
+        <h3>Filters</h3>
+        <div class="filter-group">
+          <h4>Working Schedule</h4>
+          <label><input type="checkbox"> Full Time</label>
+          <label><input type="checkbox"> Part Time</label>
+          <label><input type="checkbox"> Internship</label>
+          <label><input type="checkbox"> Project Work</label>
+          <label><input type="checkbox"> Volunteering</label>
+        </div>
+
+        <div class="filter-group">
+          <h4>Employment Type</h4>
+          <label><input type="checkbox"> Full Day</label>
+          <label><input type="checkbox"> Flexible Schedule</label>
+          <label><input type="checkbox"> Shift Work</label>
+          <label><input type="checkbox"> Distant Work</label>
+        </div>
+      </aside>
+
+      <!-- Recommended Jobs -->      
+      <div class="jobs">
+        <h2>Recommended Jobs</h2>
+        <div class="job-container">
+          <!-- First row of 3 job cards -->
+          <div class="job-row">
+            <div class="job-card" style="background-color: #FFE6E6;">
+              <span class="date">
+                <!-- <h5>09 Jan, 2025</h5> -->
+              </span>
+              <h3>Amazon</h3>
+              <p>Senior UI/UX Designer | Full-time</p> 
+              <p class="Salary">4.75 - 7.75 | 0-4yrs | USA</p>
+              <button>Apply</button>
+            </div>
+            <div class="job-card" style="background-color: #E6F7FF;">
+              <span class="date">
+                <!-- <h5>14 Feb, 2025</h5> -->
+              </span>
+              <h3>Project Manager</h3>
+              <p>Life_cycle,scope,deigns</p>
+              <p class="price">1.25 - 2.25 | 0-4yrs | Pune</p>
+              <button>Apply</button>
+            </div>
+            <div class="job-card" style="background-color: #FBEAFF;">
+              <span class="date">
+                <!-- <h5>29 Jan, 2024</h5> -->
+              </span>
+              <h3>Business Analysts</h3>
+              <p>Client-relation, Project_scope</p>
+              <p class="price">1.25 - 2.25 | 0-4yrs | Mumbai</p>
+              <button>Apply</button>
+            </div>
+          </div>
+
+          <!-- Second row of 1 job card -->
+          <div class="job-row">
+            <div class="job-card" style="background-color: #E6FFFA;">
+              <span class="date">
+                <!-- <h5>29 Jan, 2025</h5> -->
+              </span>
+              <h3>Python Developer</h3>
+              <p>SQL,Python libraries</p>
+              <p class="price">1.25 - 2.25 | 0-4yrs | Delhi</p>
+              <button>Apply</button>
+            </div>
+
+            <div class="job-card" style="background-color: #E6FFFA;">
+              <span class="date">
+                <!-- <h5>29 Jan, 2025</h5> -->
+              </span>
+              <h3>Data Analytics</h3>
+              <p>Python,PowerBI,Advanced_Excel,SQL</p>
+              <p class="price">1.25 - 2.25 | 0-4yrs | Pune,Mumbai</p>
+              <button>Apply</button>
+            </div>
+
+            <div class="job-card" style="background-color: #FBEAFF;">
+              <span class="date">
+                <!-- <h5>29 Jan, 2024</h5> -->
+              </span>
+              <h3>CAD software Engineer</h3>
+              <p>C++,CAD development,pythonr</p>
+              <p class="price">6.25 - 7.25 | 0-3yrs | Pune</p>
+              <button>Apply</button>
+            </div>
+          </div>
+
+          <!-- Second row of 1 job card -->
+          <div class="job-row">
+            <div class="job-card" style="background-color: #E6FFFA;">
+              <span class="date">
+                <!-- <h5>29 Jan, 2025</h5> -->
+              </span>
+              <h3>Python Developer</h3>
+              <p>FLask/Django,Libraries</p>
+              <p class="price">1.25 - 2.25 | 0-4yrs | Delhi</p>
+              <button>Apply</button>
+            </div>
+
+            <div class="job-card" style="background-color: #E6FFFA;">
+              <span class="date">
+                <!-- <h5>29 Jan, 2025</h5> -->
+              </span>
+              <h3>Business Development Executive</h3>
+              <p>B2B,Business sales, client relation </p>
+              <p class="price">1.25 - 2.25 |0-4yrs | Mumbai</p>
+              <button>Apply</button>
+            </div>
+
+            <div class="job-card" style="background-color: #FBEAFF;">
+              <span class="date">
+                <!-- <h5>29 Jan, 2024</h5> -->
+              </span> 
+              <h3>Frontend Developer</h3>
+              <p>HTML,CSS,JS,Reac</p>
+              <p class="price">3.25 - 4.25 | 0-2yrs | Mumbai</p>
+              <button>Apply</button>
+            </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<!-- Stats Section -->
+<section class="stats">
+  <div class="stat-item">
+    <span class="stat-title">Jobs Posted</span>
+    <span class="stat-value" id="jobs-posted">32379</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-title">Jobs Filled</span>
+    <span class="stat-value" id="jobs-filled">18253</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-title">Employers</span>
+    <span class="stat-value" id="employers">20254</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-title">Active Users</span>
+    <span class="stat-value" id="active-users">12971362</span>
+  </div>
+</section>
+
+
+
+<!-- Featured Companies Section -->
+<section class="featured-companies">
+  <h2 class="section-title">featured Companies</h2>
+  <div class="company-logos">
+    <img src="assets/logo1.png" alt="Tata Logo" class="company-logo">
+    <img src="assets/logo2.png" alt="Google Logo" class="company-logo">
+    <img src="assets/logo3.jpeg" alt="JP Logo" class="company-logo">
+    <img src="assets/logo4.png" alt="Godrej Logo" class="company-logo">
+    <img src="assets/logo5.jpeg" alt="flipcart Logo" class="company-logo">
+    <img src="assets/logo6.png" alt="link Logo" class="company-logo">
+    <img src="assets/logo7.png" alt="hitachi Logo" class="company-logo">
+    <img src="assets/logo8.png" alt="amazon Logo" class="company-logo">  
+    <img src="assets/logo9.png" alt="amazon Logo" class="company-logo">  
+
+  </div>
+</section>
+  </main>
+
+
+  <footer>
+    <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
